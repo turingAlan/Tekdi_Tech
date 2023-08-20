@@ -1,0 +1,205 @@
+:root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #F1F1F1;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --dark-blue: #0056b3;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+}
+
+body{
+    min-height: 200vh;
+    min-width: 100vw;
+    background-color: var(--cyan);
+    overflow-x: hidden;
+    background-image: url("../assets/background.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+
+}
+
+
+ul{
+    list-style: none;
+}
+
+.hidden{
+    display: none;
+}
+
+.visible{
+    display: block;
+}
+
+.top-section{
+    background-image: url(../assets/bg-home.jpg);
+    background-size: cover;
+    background-position:center ;
+    background-repeat: no-repeat;
+    opacity: 0.99;
+}
+
+
+
+/* Navbar */
+
+.logo{
+    height: 78px;
+}
+
+.navigation{
+    min-width: 100vw;
+    position: fixed;
+    top:0;
+}
+
+
+.nav-transparent{
+    background-color: transparent;
+}
+
+.nav-colored{
+    background-color: var(--light);
+}
+
+.navigation .container{
+    width: 70%;
+    margin-inline:auto;
+    border-bottom: 0.1px solid white;
+    display: flex;
+    justify-content: space-between;
+}
+.navigation .scrolled{
+    border-bottom:1px solid black;
+}
+
+.list{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+}
+
+
+.list-container{
+    width: 50%;
+}
+
+.list .list-item{
+    height: 100%;
+    padding-inline: 10px ;
+    display: flex;
+    align-items: center;
+}
+
+.list .list-item:hover{
+    background-color: var(--dark-blue);
+
+}
+.nav-click{
+    color:var(--light);
+    font-family: 'Overpass';
+    text-decoration: none;
+    font-weight: 600;
+    display: block;
+}
+
+.nav-click-white{
+    color:var(--light)
+}
+
+.list-item a:hover{
+    color: white;
+}
+
+
+.nav-click-black{
+    color:var(--dark)
+}
+
+.dropdown:hover>.dropdown-menu {
+    display: block;
+  }
+  
+  .dropdown>.dropdown-toggle:active {
+    /*Without this, clicking will make it sticky*/
+      pointer-events: none;
+  }
+
+.dropdown .dropdown-menu{
+    top: 78px;
+    left:0;
+    border-radius: 0px;
+    padding: 0px;
+
+}
+
+.dropdown-menu .dropdown-item:hover{
+    background-color: var(--dark-blue);
+    font-family: "Overpass";
+}
+
+.dropdown-item:last-child{
+    margin-bottom: 0px;
+}
+
+/* hero */
+
+.hero{
+    min-height: 65vh;
+    min-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.hero-text{
+    margin-right: auto;
+    margin-top:60px;
+    font-size: 2.1rem;
+    line-height: 48px;
+    user-select: none;
+
+}
+
+.hero-text-container{
+    width:70%;
+    margin-inline: auto;
+    color:var(--light);
+    font-family: 'Overpass';
+}
+
+/* middle section */
+
+.middle-section{
+    background-color: var(--gray);
+    min-height: 100vh;
+    margin-top:100px
+}
